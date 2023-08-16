@@ -1,0 +1,33 @@
+GET http://127.0.0.1:8000/api/users?limit=2&page=1&q=ado
+Accept: application/json
+###guarda
+POST http://127.0.0.1:8000/api/users
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "juan",
+    "email": "juan@mail.com",
+    "password": "juan54321"
+}
+
+###mostrar
+GET http://127.0.0.1:8000/api/users/3
+Accept: application/json
+
+###modificar
+
+PUT http://127.0.0.1:8000/api/users/3
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "juanaaa",
+    "email": "juan@mail.com",
+    "password": "juan54321"
+}
+
+###eliminar
+
+DELETE  http://127.0.0.1:8000/api/users/3
+Accept: application/json
